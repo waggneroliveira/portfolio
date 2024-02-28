@@ -164,7 +164,7 @@
     }
     .sandwich{
         display: block;
-        margin-right: 30px;
+        margin-right: 10px;
    }
     .banner__lamina__description .banner__title, .banner__lamina__description .banner__subtitle, .banner__lamina__description .banner__text{
         opacity: 1;
