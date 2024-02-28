@@ -45,18 +45,40 @@ document.addEventListener( 'DOMContentLoaded', function () {
                 behavior: 'smooth'
             });
     
-            setTimeout(() => {
-                const aboutRightLeftDivs = document.querySelectorAll(
-                    '.about__right, .about__left, .project_category__title, .project__link, .project__list, .contact__left, .contact__right'
-                    );
+            // setTimeout(() => {
+            //     const aboutRightLeftDivs = document.querySelectorAll(
+            //         '.about__right, .about__left, .project_category__title, .project__link, .project__list, .contact__left, .contact__right'
+            //         );
             
-                aboutRightLeftDivs.forEach((div) => {
-                    div.classList.add('boxAnimate', 'animate');
-                });
-            }, 1000);
+            //     aboutRightLeftDivs.forEach((div) => {
+            //         div.classList.remove('boxAnimate', 'animate');
+            //     });
+            // }, 1000);
+            
             
         });
     });
+
+    // Função para remover as classes quando a largura da tela for menor ou igual a 500
+    function removeClassesOnSmallScreen() {
+        const screenWidth = window.innerWidth;
+        const aboutRightLeftDivs = document.querySelectorAll(
+            '.about__right, .about__left, .project_category__title, .project__link, .project__list, .contact__left, .contact__right'
+        );
+
+        if (screenWidth <= 500) {
+            aboutRightLeftDivs.forEach((div) => {
+                div.classList.remove('boxAnimate', 'animate');
+            });
+        }
+    }
+
+    // Chama a função para remover as classes quando a página é carregada
+    removeClassesOnSmallScreen();
+
+    // Adiciona um ouvinte de evento de redimensionamento da janela para verificar e remover as classes quando a tela for redimensionada
+    window.addEventListener('resize', removeClassesOnSmallScreen);
+
     
     sidebar(); // CHAMA A FUNCAO SIDEBAR
 });
