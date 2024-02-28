@@ -128,6 +128,16 @@
    }
 }
 @media screen and (max-width: 500px) {
+    .header.flutuante .logo img{
+        width: 80px;
+    }
+    .about__right .about__description .about__navigation > ul li{
+        font-size:0.813rem;
+        padding: 0 20px;
+    }
+    .project__list{
+        opacity: 1 !important;
+    }
     .project__list.active, .about__content.active{
         height: 100%;
     }
@@ -181,6 +191,7 @@
    }
     .about__right .about__description .about__navigation ul{
         flex-wrap: wrap;
+        height: 35px;
    }
     .about__left .about__image img{
         width: 200px;
@@ -218,8 +229,14 @@
         width: 25px;
         height: 25px;
    }
+    .banner__lamina__description .banner__subtitle{
+        background: inherit;
+        color: #005AAA;
+    }
     .banner__lamina__description .banner__title, .banner__lamina__description .banner__subtitle, .banner__lamina__description .banner__text{
         white-space: wrap;
+        border: inherit;
+        overflow: inherit;
    }
     .banner__lamina__description{
         max-width: inherit;
@@ -233,8 +250,14 @@
     .about__skill__navigation{
         margin-top: 30px;
     }
+    .about__right, .about__left, .project_category__title, .project__link, .project__list, .contact__left, .contact__right{
+        
+transform: inherit;
+        
+opacity: 1;
+    }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
     .banner__lamina__description{
         width: 90%;
         margin: 0 auto;
@@ -242,8 +265,10 @@
     .banner .banner__lamina{
         width: 100%;
    }
+    .banner__title,
     .banner__lamina__description .banner__subtitle{
-        font-size: 1.275rem !important;
+        font-size: 1.488rem !important;
+        line-height: 37px !important;
    }
     .contact .contact__input img{
         max-width: 25px;
