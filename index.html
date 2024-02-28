@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Wagner</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/responsivo.css">
+
+    <script  src="./assets/js/main.js"></script>
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <header id="header" class='header'>
+        <div class="wrap">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/images/logo.svg" alt="Wagner Vasconcelos de Oliveira" title="Wagner Vasconcelos de Oliveira">
+                </a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li class="menu__item"><a href="#header" class="menu__link">Home</a></li>
+                    <li class="menu__item"><a href="#about" class="menu__link">About Me</a></li>
+                    <li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
+                    <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sandwich">
+                <a  class="botao-sidebar" href="#menu_sidebar" data-sidebar="#menu_sidebar">
+                    <div class="sandwich__title">
+                        <p>Menu</p>
+                    </div>
+                    <div class="span">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <div id="menu_sidebar" class="sidebar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="./assets/images/logo.svg" alt="Wagner Vasconcelos de Oliveira" title="Wagner Vasconcelos de Oliveira">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li class="menu__item"><a href="#header" class="menu__link">Home</a></li>
+                <li class="menu__item"><a href="#about" class="menu__link">About Me</a></li>
+                <li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
+                <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="contact__menu">
+            <div class="contac">
+                <a href="mailto:waggner.dev@gmail.com" target="_blank" class="link-full"></a>
+                <img src="./assets/images/mail.svg" alt="email"/>
+            </div>
+            <div class="contac">
+                <a href="https://wa.me/5571982743414" target="_blank" class="link-full"></a>
+                <img src="./assets/images/wpp.svg" alt="whatsapp"/>
+            </div>
+        </div>
+     </div> 
+
+    <main>        
+        <section id="slide" class="banner" style="background-image: url('./assets/images/banner.jpg');">
+            <div class="banner__lamina"><!--style="background-image: url('./assets/images/proj.png');"-->
+                <div class="banner__lamina__description">
+                    <h1 class="banner__title">Hi, my name is </h1>
+                    <h2 class="banner__subtitle">< Wagner Oliveira /></h2>
+                    <p class="banner__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                    <div class="banner__button hidden trans-slow">
+                        <a href="" class="banner__link">Hire me</a>
+                        <a href="" class="banner__link">my CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="technologies" style="display: none;">
+            <div class="wrap">
+                <h2 class="title">Habilidades</h2>
+                <div id="image-carousel" class="splide" aria-label="Beautiful Images">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="assets/images/html.svg" alt="HTML">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/images/css.svg" alt="CSS 3" title="CSS 3">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/images/js.svg" alt="JAVA SCRIPT" title="JAVA SCRIPT">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/images/jquery.svg" alt="JQUERY" title="JQUERY">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/images/sass.png" alt="SASS" title="SASS">
+                            </li>                                
+                            <li class="splide__slide">
+                                <img src="assets/images/php.svg" alt="PHP" title="PHP">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/images/github.svg" alt="GITHUB" title="GITHUB">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/images/laravel.svg" alt="LARAVEL" title="LARAVEL">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/images/bootstrap.svg" alt="BOOTSTRAP" title="BOOTSTRAP">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="assets/images/mysql.svg" alt="MYSQL" title="MYSQL">
+                            </li>  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about animateSet animate">
+            <div class="about__left boxAnimate animate">
+                <div class="about__image">
+                    <img src="assets/images/wag.jfif" alt="About Image">
+                </div>
+            </div>
+            <div class="about__right boxAnimate animate">                
+                <div class="about__description">
+                    <h2 class="about__title"> < About me /></h2>
+                    <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <nav class="about__navigation">
+                        <ul>
+                            <li class="about__navigation__link active" onclick="toggleAbout('sk')"><a data-category="sk">Skills</a></li>
+                            <li class="about__navigation__link" onclick="toggleAbout('ex')"><a data-category="ex">Experience</a></li>
+                            <li class="about__navigation__link" onclick="toggleAbout('ed')"><a data-category="ed">Education</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="about__container">
+                        <div id="sk" class="about__content active">
+                            <ul class="about__skill__navigation">
+                                <li>
+                                    <img src="assets/images/html.svg" alt="HTML">
+                                </li>
+                                <li>
+                                    <img src="assets/images/css.svg" alt="CSS 3" title="CSS 3">
+                                </li>
+                                <li>
+                                    <img src="assets/images/js.svg" alt="JAVA SCRIPT" title="JAVA SCRIPT">
+                                </li>
+                                <li>
+                                    <img src="assets/images/jquery.svg" alt="JQUERY" title="JQUERY">
+                                </li>
+                                <li>
+                                    <img src="assets/images/sass.png" alt="SASS" title="SASS">
+                                </li>                                
+                                <li>
+                                    <img src="assets/images/php.svg" alt="PHP" title="PHP">
+                                </li>
+                                <li>
+                                    <img src="assets/images/git.svg" alt="GIT" title="GIT">
+                                </li>
+                                <li>
+                                    <img src="assets/images/github.svg" alt="GITHUB" title="GITHUB">
+                                </li>
+                                <li>
+                                    <img src="assets/images/laravel.svg" alt="LARAVEL" title="LARAVEL">
+                                </li>
+                                <li>
+                                    <img src="assets/images/bootstrap.svg" alt="BOOTSTRAP" title="BOOTSTRAP">
+                                </li>
+                                <li>
+                                    <img src="assets/images/mysql.svg" alt="MYSQL" title="MYSQL">
+                                </li>  
+                                <li>
+                                    <img src="assets/images/figma.svg" alt="FIGMA" title="FIGMA">
+                                </li>  
+                                <li>
+                                    <img src="assets/images/xd.svg" alt="xd" title="xd">
+                                </li>  
+                            </ul>
+                        </div>
+                        <div id="ex" class="about__content">
+                            <ul class="about__navigation">
+                                <li class="about__link">
+                                    Development web | Front-end <br>
+                                    <span>Agência Hoom Interativa - Período: Abr/2019 - Jan/2022</span>
+                                </li>
+                                <li class="about__link">
+                                    Development web | Back-end | PHP | Laravel <br>
+                                    <span>Agência Hoom Interativa - Período: Fev/2022 a presente data</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="ed" class="about__content">
+                            <ul class="about__navigation">
+                                <li class="about__link">
+                                    Analysis and systems development <br>
+                                    <span> Catholic University of Salvador</span>
+                                </li>
+                                <li class="about__link">
+                                    Analysis and systems development <br>
+                                    <span> Computer Network Technician - SENAI Cetind</span>
+                                </li>
+                                <li class="about__link">
+                                    Computer Technician <br>
+                                    <span>SENAI Dendezeiros</span>
+                                </li>
+                                <li class="about__link">
+                                    Microcomputer maintenance and support <br>
+                                    <span>Islands Project</span>
+                                </li>
+                                <li class="about__link">
+                                    Basic and advanced computing <br>
+                                    <span>Leader Courses</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="animateSet animate">
+            <div class="project__lamina">
+                <div class="project_section">
+                    <div class="project_category_filter">
+                        <div class="wrap">
+                            <h2 class="project_category__title boxAnimate animate"> < Projects /> </h2>
+                            <nav>
+                                <ul>
+                                    <li class="project__link boxAnimate animate trans-slow active"><a onclick="toggleProjects('site')" data-category="site"><img src="assets/images/eccomerce.svg" alt=""><span class="trans-slow">Sites</span></a></li>
+                                    <li class="project__link boxAnimate animate trans-slow"><a onclick="toggleProjects('sistema')" data-category="sistema"><img src="assets/images/eccomerce.svg" alt=""><span class="trans-slow">Sistemas</span></a></li>
+                                    <li class="project__link boxAnimate animate trans-slow"><a onclick="toggleProjects('ecommerce')" data-category="ecommerce"><img src="assets/images/eccomerce.svg" alt=""><span class="trans-slow">Ecommerce</span></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div id="site" class="project__list active trans-slow boxAnimate animate">
+                        <div class="project__item col-x3">
+                            <div class="project__cont__cubo">
+                                <div class="project__cubo__port project__top trans-slow" style="background-image: url('./assets/images/p1.png');">
+                                    <a href="" target="_blank" class="link-full"></a>
+                                </div>
+                                <div class="project__cubo__port project__bottom trans-slow" style="background-image: url('./assets/images/p1.png');">
+                                    <a href="" target="_blank" class="link-full"></a>
+                                    <div class="project__description">
+                                        <h2 class="project__title">Acidos Naturais</h2>
+                                        <p class="project__paragrafo">Decrição ou topico do projeto</p>
+                                        <div class="project__image__link">
+                                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/images/eye.svg" alt="Visite">
+                                            </a>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/images/gitHubP.svg" alt="github"/>
+                                            </a>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                       
+                        <div class="project__item col-x3">
+                            <div class="project__cont__cubo">
+                                <div class="project__cubo__port project__top trans-slow" style="background-image: url('./assets/images/p2.png');">
+                                    <a href="" target="_blank" class="link-full"></a>
+                                </div>
+                                <div class="project__cubo__port project__bottom trans-slow" style="background-image: url('./assets/images/p2.png');">
+                                    <a href="" target="_blank" class="link-full"></a>
+                                    <div class="project__description">
+                                        <h2 class="project__title">Acidos Naturais</h2>
+                                        <p class="project__paragrafo">Decrição ou topico do projeto</p>
+                                        <div class="project__image__link">
+                                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/images/eye.svg" alt="Visite">
+                                            </a>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/images/gitHubP.svg" alt="github"/>
+                                            </a>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                       
+                        <div class="project__item col-x3">
+                            <div class="project__cont__cubo">
+                                <div class="project__cubo__port project__top trans-slow" style="background-image: url('./assets/images/proj.png');">
+                                    <a href="" target="_blank" class="link-full"></a>
+                                </div>
+                                <div class="project__cubo__port project__bottom trans-slow" style="background-image: url('./assets/images/proj.png');">
+                                    <a href="" target="_blank" class="link-full"></a>
+                                    <div class="project__description">
+                                        <h2 class="project__title">Acidos Naturais</h2>
+                                        <p class="project__paragrafo">Decrição ou topico do projeto</p>
+                                        <div class="project__image__link">
+                                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/images/eye.svg" alt="Visite">
+                                            </a>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/images/gitHubP.svg" alt="github"/>
+                                            </a>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                       
+                        <div class="project__item col-x3">
+                            <div class="project__cont__cubo">
+                                <div class="project__cubo__port project__top trans-slow" style="background-image: url('./assets/images/proj.png');">
+                                    <a href="" target="_blank" class="link-full"></a>
+                                </div>
+                                <div class="project__cubo__port project__bottom trans-slow" style="background-image: url('./assets/images/proj.png');">
+                                    <a href="" target="_blank" class="link-full"></a>
+                                    <div class="project__description">
+                                        <h2 class="project__title">Acidos Naturais</h2>
+                                        <p class="project__paragrafo">Decrição ou topico do projeto</p>
+                                        <div class="project__image__link">
+                                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/images/eye.svg" alt="Visite">
+                                            </a>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/images/gitHubP.svg" alt="github"/>
+                                            </a>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                       
+                        <div class="project__item col-x3">
+                            <div class="project__cont__cubo">
+                                <div class="project__cubo__port project__top trans-slow" style="background-image: url('./assets/images/proj.png');">
+                                    <a href="" target="_blank" class="link-full"></a>
+                                </div>
+                                <div class="project__cubo__port project__bottom trans-slow" style="background-image: url('./assets/images/proj.png');">
+                                    <a href="" target="_blank" class="link-full"></a>
+                                    <div class="project__description">
+                                        <h2 class="project__title">Acidos Naturais</h2>
+                                        <p class="project__paragrafo">Decrição ou topico do projeto</p>
+                                        <div class="project__image__link">
+                                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/images/eye.svg" alt="Visite">
+                                            </a>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/images/gitHubP.svg" alt="github"/>
+                                            </a>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                       
+                        <div class="project__item col-x3">
+                            <div class="project__cont__cubo">
+                                <div class="project__cubo__port project__top trans-slow" style="background-image: url('./assets/images/proj.png');">
+                                    <a href="" target="_blank" class="link-full"></a>
+                                </div>
+                                <div class="project__cubo__port project__bottom trans-slow" style="background-image: url('./assets/images/proj.png');">
+                                    <a href="" target="_blank" class="link-full"></a>
+                                    <div class="project__description">
+                                        <h2 class="project__title">Acidos Naturais</h2>
+                                        <p class="project__paragrafo">Decrição ou topico do projeto</p>
+                                        <div class="project__image__link">
+                                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/images/eye.svg" alt="Visite">
+                                            </a>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/images/gitHubP.svg" alt="github"/>
+                                            </a>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div id="sistema" class="project__list trans-slow">
+                        <div class="project__item col-x3">
+                            <div class="project__cont__cubo">
+                                <div class="project__cubo__port project__top trans-slow" style="background-image: url('./assets/images/proj.png');">
+                                    <a href="" target="_blank" class="link-full"></a>
+                                </div>
+                                <div class="project__cubo__port project__bottom trans-slow" style="background-image: url('./assets/images/proj.png');">
+                                    <a href="" target="_blank" class="link-full"></a>
+                                    <div class="project__description">
+                                        <h2 class="project__title">Acidos Naturais</h2>
+                                        <p class="project__paragrafo">Decrição ou topico do projeto</p>
+                                        <div class="project__image__link">
+                                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/images/eye.svg" alt="Visite">
+                                            </a>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/images/gitHubP.svg" alt="github"/>
+                                            </a>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ecommerce" class="project__list trans-slow">
+                        <div class="project__item col-x3">
+                            <div class="project__cont__cubo">
+                                <div class="project__cubo__port project__top trans-slow" style="background-image: url('./assets/images/proj.png');">
+                                    <a href="" target="_blank" class="link-full"></a>
+                                </div>
+                                <div class="project__cubo__port project__bottom trans-slow" style="background-image: url('./assets/images/proj.png');">
+                                    <a href="" target="_blank" class="link-full"></a>
+                                    <div class="project__description">
+                                        <h2 class="project__title">Acidos Naturais</h2>
+                                        <p class="project__paragrafo">Decrição ou topico do projeto</p>
+                                        <div class="project__image__link">
+                                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/images/eye.svg" alt="Visite">
+                                            </a>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/images/gitHubP.svg" alt="github"/>
+                                            </a>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__item col-x3">
+                            <div class="project__cont__cubo">
+                                <div class="project__cubo__port project__top trans-slow" style="background-image: url('./assets/images/proj.png');">
+                                    <a href="" target="_blank" class="link-full"></a>
+                                </div>
+                                <div class="project__cubo__port project__bottom trans-slow" style="background-image: url('./assets/images/proj.png');">
+                                    <a href="" target="_blank" class="link-full"></a>
+                                    <div class="project__description">
+                                        <h2 class="project__title">Acidos Naturais</h2>
+                                        <p class="project__paragrafo">Decrição ou topico do projeto</p>
+                                        <div class="project__image__link">
+                                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/images/eye.svg" alt="Visite">
+                                            </a>
+                                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/images/gitHubP.svg" alt="github"/>
+                                            </a>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact animateSet animate">
+            <div class="wrap">
+                <div class="contact__content">
+                    <div class="contact__left col-x2 boxAnimate animate">
+                        <h2 class="contact__title">Talk with me now!</h2>
+                        <h3 class="contact__subtitle">Let’s get a conversation</h3>
+                        <p>Send a email or text me from What’s App Im looking for a good opportunities, Ill always be available for a meeting whenever you want!</p>
+                    </div>
+                    <div class="contact__right col-x2 boxAnimate animate">
+                        <div class="contact__inputs">
+                            <div class="contact__input">
+                                <a href="mailto:waggner.dev@gmail.com" target="_blank" class="link-full"></a>
+                                <img src="./assets/images/mail.svg" alt="email"/>
+                                <span>waggner.dev@gmail.com</span> 
+                                <img src="./assets/images/arrow.svg" class="seta" alt="seta"/>
+                                
+                            </div>
+                            <div class="contact__input">
+                                <a href="https://wa.me/5571982743414" target="_blank" class="link-full"></a>
+                                <img src="./assets/images/wpp.svg" alt="whatsapp"/>
+                                <span>+55 (71) 9 8274-3414</span> 
+                                <img src="./assets/images/arrow.svg" class="seta" alt="seta"/>
+                                
+                            </div>
+                            <div class="contact__input">
+                                <img src="./assets/images/location.svg" alt="location">
+                                <span>Salvador - BA - Brazil</span> 
+                                <img src="./assets/images/arrow.svg" class="seta" alt="seta"/>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div class="footer">
+                <a href="index.html">
+                    <img src="./assets/images/logo.svg" alt="Wagner Vasconcelos de Oliveira" title="Wagner Vasconcelos de Oliveira">
+                </a>
+                <p>© 2024 - All rights reserved</p>
+                <div class="developed">
+                    DEVELOPED BY WAGNER VASCONCELOS
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>         
+        function toggleProjects(category) {
+            var target = document.getElementById(category);
+
+            // Remove 'active' class from all elements with class 'about__content'
+            document.querySelectorAll('.project__list').forEach(function (list) {
+                list.classList.remove('active');
+            });
+
+            // Remove a classe 'active' de todos os elementos com a classe 'about__navigation__link'
+            document.querySelectorAll('.project__link').forEach(function (link) {
+                link.classList.remove('active');
+            });
+
+            // Se a categoria clicada for 'sk', remove a classe 'active'
+            if (category === 'site' && target.classList.contains('active')) {
+                target.classList.remove('active');
+            } else {
+                // Adiciona a classe 'active' à categoria clicada
+                target.classList.add('active');
+
+                // Adicione a classe 'active' ao link de navegação correspondente
+                document.querySelector('.project__link a[data-category="' + category + '"]').parentNode.classList.add('active');
+            }
+        }
+
+        function toggleAbout(category) {
+            var target = document.getElementById(category);
+
+            // Remove 'active' class from all elements with class 'about__content'
+            document.querySelectorAll('.about__content').forEach(function (list) {
+                list.classList.remove('active');
+            });
+
+            // Remove a classe 'active' de todos os elementos com a classe 'about__navigation__link'
+            document.querySelectorAll('.about__navigation__link').forEach(function (link) {
+                link.classList.remove('active');
+            });
+
+            // Se a categoria clicada for 'sk', remove a classe 'active'
+            if (category === 'sk' && target.classList.contains('active')) {
+                target.classList.remove('active');
+            } else {
+                // Adiciona a classe 'active' à categoria clicada
+                target.classList.add('active');
+
+                // Adicione a classe 'active' ao link de navegação correspondente
+                document.querySelector('.about__navigation__link a[data-category="' + category + '"]').parentNode.classList.add('active');
+            }
+        }
+
+        var header = document.getElementById("header");
+        
+        // Obtém a posição inicial do cabeçalho
+        var headerOffset = header.offsetTop;
+
+        window.addEventListener("scroll", function() {
+            // Verifica se a posição de rolagem ultrapassou a posição inicial do cabeçalho
+            if (window.pageYOffset > headerOffset) {
+                header.classList.add("flutuante");
+            } else {
+                header.classList.remove("flutuante");
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+    <script src="./assets/js/animate.js"></script>
+    <script src="./assets/js/jquery.menusidebar.js"></script>
+</body>
+</html>
